@@ -10,6 +10,7 @@ void *validColumn(void *param);
 void *validRow(void *param);
 void *validSquare(void *param);
 void gettingInfoFromFile(void * param, FILE * file);
+void printBoard(void * param);
 
 int main(int argc, char *argv[]) {
     pthread_t tid[THREADS];
@@ -27,8 +28,8 @@ int main(int argc, char *argv[]) {
     int  sudoku[THREADS/3][THREADS/3];
     /*Getting all the information of the file */
     gettingInfoFromFile((void *) sudoku, file);
-
     fclose(file);
+    printBoard(sudoku);
     int x = 0;
     /* Creation of the threads of validation of column */
     for (int x = 0; x < 9; x++)
@@ -46,15 +47,25 @@ int main(int argc, char *argv[]) {
         pthread_join(tid[j], NULL);
     /*Checking if there's was repeated value*/
     if(validSudoku == '1'){
-        printf("Sudoku well done");
+        printf("Sudoku well done\n");
     }
     else{
-        printf("Bad sudoku");
+        printf("Bad sudoku\n");
     }
 
     return 0;
 }
 
+
+void printBoard(void * param){
+    int(*sudoku)[9] = param;
+    for(int x = 0; x < 9; x++){
+        for(int y = 0; y < 9; y++){
+            printf("%d ", sudoku[x][y]);
+        }
+        printf("\n");
+    }
+}
 
 void gettingInfoFromFile(void * param, FILE * file){
     int index;
