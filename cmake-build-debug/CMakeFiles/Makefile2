@@ -59,10 +59,10 @@ RM = /snap/clion/61/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sergio/CLionProjects/Sudoku
+CMAKE_SOURCE_DIR = "/home/sergio/Documents/Git/Operating Systems"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sergio/CLionProjects/Sudoku/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/sergio/Documents/Git/Operating Systems/cmake-build-debug"
 
 #=============================================================================
 # Target rules for target CMakeFiles/Sudoku.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/sergio/CLionProjects/Sudoku/cmake-build-debug
 CMakeFiles/Sudoku.dir/all:
 	$(MAKE) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/depend
 	$(MAKE) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sergio/CLionProjects/Sudoku/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Sudoku"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/sergio/Documents/Git/Operating Systems/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target Sudoku"
 .PHONY : CMakeFiles/Sudoku.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/Sudoku.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Sudoku.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergio/CLionProjects/Sudoku/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/sergio/Documents/Git/Operating Systems/cmake-build-debug/CMakeFiles" 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Sudoku.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sergio/CLionProjects/Sudoku/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/sergio/Documents/Git/Operating Systems/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/Sudoku.dir/rule
 
 # Convenience name for target.

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/sergio/CLionProjects/Sudoku/main.c" "/home/sergio/CLionProjects/Sudoku/cmake-build-debug/CMakeFiles/Sudoku.dir/main.c.o"
+  "/home/sergio/Documents/Git/Operating Systems/main.c" "/home/sergio/Documents/Git/Operating Systems/cmake-build-debug/CMakeFiles/Sudoku.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
